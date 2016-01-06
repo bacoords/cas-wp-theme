@@ -1,0 +1,11 @@
+{
+    "path": {
+        "scss/style.scss": {
+            "sass.enabled": true,
+            "sass.options": {
+                "outputStyle": "compressed"
+            },
+            "linting.collapsed": true
+        }
+    }
+}

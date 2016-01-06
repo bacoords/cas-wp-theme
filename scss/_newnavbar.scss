@@ -1,0 +1,487 @@
+@import url(https://fonts.googleapis.com/css?family=Lato|PT+Sans:400,700);
+
+
+$nav-large:  1250px;
+$nav-md-lg:  1000px;
+$nav-med:    660px;
+$nav-sm:     400px;
+$nav-large-1:  $nav-large + 1;
+$nav-md-lg-1:  $nav-md-lg + 1;
+$nav-med-1:   $nav-med + 1;
+$nav-sm-1:    $nav-sm + 1;
+
+.cas-nav-top{
+  height:34px;
+  @media(min-width:$nav-md-lg-1)
+  { 
+    position:fixed;
+  }
+  background:#ffffff;
+  overflow:hidden;
+	width:100%;
+	z-index: 100008;
+  border-bottom: 1px solid #e5e5e5;	
+  display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+  display: -ms-flexbox;  /* TWEENER - IE 10 */
+  display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
+  display:flex;
+  flex-direction:row;
+  justify-content:space-between;
+  @media(max-width:$nav-med){
+    flex-direction:row-reverse;
+  }
+  .cnt-left{
+    padding-left:13px;
+    @media(max-width:$nav-med){
+      display:none;
+    }
+    ul{
+      list-style:none;
+      margin:0;
+      padding:0;
+      li{
+        display:block;
+        float:left; 
+        a{
+          display:block;
+          padding:11px 7px;
+          height:34px;
+          font-size:10px;
+          font-weight: 700;
+          width:80px;
+          border-right: 1px solid #e5e5e5;				
+          color:#232323;
+          font-family:'PT Sans', sans-serif; 
+          font-size:12px;
+          font-weight: 400;
+          text-decoration: none;
+          text-align: center;
+          &:hover{
+            /* color:darken(#232323, 100%); */
+            /* color:#d8050e; */
+            font-weight:700;
+            background:rgba(#e5e5e5, 0.6);
+            -webkit-transition: all 200ms ease;
+            -moz-transition: all 200ms ease;
+            -o-transition: all 200ms ease;
+            transition: all 200ms ease;
+          }
+        }
+      }
+    } 
+  }
+  .cnt-right{
+    padding-right:20px;
+    ul{
+      list-style:none;
+      margin:0;
+      padding:0;   
+      li{
+        display:block;
+        float:left; 
+        a{
+          display:block;
+          padding:11px 10px;
+          height:34px;
+          font-size:10px;
+          font-weight: 700;
+          min-width:40px;
+          /* border-right: 1px solid #bbb; */				
+          color:#232323;
+          font-family:'PT Sans', sans-serif; 
+          font-size:12px;
+          font-weight: 400;
+          text-decoration: none;
+          text-align: center;
+          &:hover{
+            color:#d8050e;
+            -webkit-transition: all 200ms ease;
+            -moz-transition: all 200ms ease;
+            -o-transition: all 200ms ease;
+            transition: all 200ms ease;
+          }
+        }
+        a.cnt-cart{
+            padding:7px 0px;
+          img{
+            height:20px;
+          }
+          &:hover{
+            img{
+              opacity:0.5;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
+.cas-nav{
+  height:75px;
+  overflow:hidden;
+  background:#ffffff;
+  border-bottom: 1px solid #e5e5e5;	
+	min-height: 0px;
+
+  @media(min-width:$nav-md-lg-1)
+  { 
+    position:fixed;
+  }
+	top:34px;
+	width:100%;
+	z-index: 100007;  
+  display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+  display: -ms-flexbox;  /* TWEENER - IE 10 */
+  display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
+  display:flex;
+  flex-direction:row;
+  justify-content:space-between;
+  .cn-left{
+    .cn-logo-lg{
+      padding:18px 15px;
+      padding-left:30px;
+      @media(max-width:$nav-sm){
+        display:none;
+      }
+      img{
+        height:40px;
+        width:198px;
+      }
+    }
+    .cn-logo-sm{
+      padding:18px 15px;
+      padding-left:40px;
+      @media(min-width:$nav-sm-1){
+        display:none;
+      }
+      img{
+        height:40px;
+        width:80px;
+      }
+    }
+    
+  }
+  .cn-right{
+    padding-right:25px;
+    .cn-mob-link{
+      display:block;
+      float:left;
+      padding-left:25px;
+      padding-top:13px;
+      /* padding-right:25px; */
+      @media(min-width:$nav-md-lg-1){
+        display:none;
+      }
+      span{
+        font: 800 30px 'Lato', sans-serif;
+        cursor: pointer;
+      }
+    }
+    
+    .cn-search-lg{
+      padding-top:13px;
+      display:block;
+      float:left;
+      @media(max-width:$nav-large){
+        display:none;
+      }
+    }
+    .cn-search-sm{
+      padding-top:20px;
+      display:block;
+      float:left;
+      a{
+        img{
+          height:30px;
+        }
+      }
+      @media(min-width:$nav-large-1){
+        display:none;
+      }
+    }
+  }
+  .cn-center{
+    @media(max-width:$nav-md-lg){
+      display:none;
+    }
+    ul{
+      list-style:none;
+      margin:0;
+      padding:0;
+      text-align:center;
+      li{
+        display:inline-block;
+        padding:0px;
+        a{
+          display:block;
+          padding:32px 10px;
+          text-transform: uppercase;
+          
+          height:50px;
+          width: 106px;			
+          color:#232323;  
+          font: 900 12px 'PT Sans', sans-serif; 
+          text-decoration: none;
+          text-align: center;
+          &:hover{
+            color:#d8050e;
+            -webkit-transition: all 200ms ease;
+            -moz-transition: all 200ms ease;
+            -o-transition: all 200ms ease;
+            transition: all 200ms ease;
+          }
+        }
+      }
+			li.current-menu-item a {
+    			color: #ff002d;
+			}
+    }
+  }
+}
+
+
+.cn-feat-search-group{
+	border-collapse: separate;
+	box-sizing: border-box;
+	color: rgb(51, 51, 51);
+	display: table;
+	font-family: 'Lato', sans-serif;
+	font-size: 1rem;
+	height: 50px;
+	line-height: 20px;
+	margin-bottom: 10px;
+	position: relative;
+	width:400px;
+	max-width:300px;
+	.cn-feat-search-input{
+		/* text-transform: uppercase; */
+		background-image: url(http://cas.threecordsstudio.com/wp-content/themes/cas/images/searchIconRed.png);
+		background-size: 25px 25px;
+		background-repeat: no-repeat;
+		background-position-y: 10px;
+		background-position-x: 10px;
+		padding-left: 40px;
+		/* -webkit-box-shadow: rgba(0, 0, 0, 0.0745098) 0px 1px 1px 0px inset; */
+		-webkit-transition-delay: 0s, 0s;
+		-webkit-transition-duration: 0.15s, 0.15s;
+		-webkit-transition-property: border-color, box-shadow;
+		-webkit-transition-timing-function: ease-in-out, ease-in-out;
+		background-color: rgb(255, 255, 255);
+//		background-image: none;
+		border-bottom-color: #e5e5e5;
+		border-bottom-left-radius: 4px;
+		border-bottom-right-radius: 4px;
+		border-bottom-style: solid;
+		border-bottom-width: 1px;
+		border-collapse: separate;
+		border-left-color:  #e5e5e5;
+		border-left-style: solid;
+		border-left-width: 1px;
+		border-right-color: #e5e5e5;
+		border-right-style: solid;
+		border-right-width: 1px;
+		border-top-color:  #e5e5e5;
+		border-top-left-radius: 4px;
+		border-top-right-radius: 4px;
+		border-top-style: solid;
+		border-top-width: 1px;
+		/* box-shadow: rgba(0, 0, 0, 0.0745098) 0px 1px 1px 0px inset; */
+		box-sizing: border-box;
+		color: rgb(85, 85, 85);
+		display: block;
+		float: left;
+		font-family: 'Lato', sans-serif;
+		font-size: 14px;
+		font-style: normal;
+		font-variant: normal;
+		font-weight: normal;
+		height: 47px;
+		line-height: 1.4rem;
+		margin-bottom: 0px;
+		margin-left: 0px;
+		margin-right: 0px;
+		margin-top: 0px;
+		padding-bottom: 6px;
+//		padding-left: 12px;
+		padding-right: 12px;
+		padding-top: 6px;
+		position: relative;
+		transition-delay: 0s, 0s;
+		transition-duration: 0.15s, 0.15s;
+		transition-property: border-color, box-shadow;
+		transition-timing-function: ease-in-out, ease-in-out;
+		width: 100%;
+		z-index: 2;
+		/* -webkit-box-shadow: inset 0px 2px 2px 0px rgba(117,117,117,1); */
+		/* -moz-box-shadow: inset 0px 2px 2px 0px rgba(117,117,117,1); */
+		/* box-shadow: inset 0px 2px 2px 0px rgba(117,117,117,1); */
+	}
+	.cn-feat-search-input--black{
+		
+		background-image: url(http://cas.threecordsstudio.com/wp-content/themes/cas/images/searchIconblack.png);
+	}
+	.cn-feat-search-button-span{
+		border-collapse: separate;
+		box-sizing: border-box;
+		color: rgb(51, 51, 51);
+		display: table-cell;
+		font-family: 'Lato', sans-serif;
+		font-size: 0px;
+//		height: 34px;
+		line-height: 0px;
+		position: relative;
+		vertical-align: middle;
+		white-space: nowrap;
+		width: 0%;
+		.cn-feat-search-button{
+			position: absolute; height: 0px; width: 0px; border: none; padding: 0px;
+			-webkit-appearance: none;
+			-webkit-user-select: none;
+			background-color: rgb(255, 255, 255);
+			background: url(http://cas.threecordsstudio.com/wp-content/themes/cas/images/search.2.png) no-repeat;
+			background-size: cover;
+			background-position:center center;
+			border-bottom-color: rgb(204, 204, 204);
+			border-bottom-left-radius: 4px;
+			border-bottom-right-radius: 4px;
+			border-bottom-style: solid;
+			border-bottom-width: 1px;
+			border-collapse: separate;
+			border-left-color: rgb(204, 204, 204);
+			border-left-style: solid;
+			border-left-width: 1px;
+			border-right-color: rgb(204, 204, 204);
+			border-right-style: solid;
+			border-right-width: 1px;
+			border-top-color: rgb(204, 204, 204);
+			border-top-left-radius: 4px;
+			border-top-right-radius: 4px;
+			border-top-style: solid;
+			border-top-width: 1px;
+			box-sizing: border-box;
+			color: rgb(51, 51, 51);
+			cursor: pointer;
+			display: inline-block;
+			font-family: 'Lato', sans-serif;
+			font-size: 1rem;
+			font-style: normal;
+			font-variant: normal;
+			font-weight: normal;
+//			height: 34px;
+			line-height: 1.4rem;
+			margin-bottom: 0px;
+			margin-left: -1px;
+			margin-right: 0px;
+			margin-top: 0px;
+			overflow-x: visible;
+			overflow-y: visible;
+			padding-bottom: 6px;
+			padding-left: 12px;
+			padding-right: 12px;
+			padding-top: 6px;
+			position: relative;
+			text-align: center;
+			text-transform: none;
+			vertical-align: middle;
+			white-space: nowrap;
+			width: 100%;
+			z-index: 2;
+			position: absolute;
+      height: 0px;
+      width: 0px;
+      border: none;
+      padding: 0px;
+		}
+	}
+}
+.cn-search-mob {
+  display:none;
+  border-bottom: 1px solid #e5e5e5;
+  height:60px;
+  overflow:hidden;
+  background:#ffffff;
+  min-height: 0px;
+  @media(min-width:$nav-md-lg-1)
+  { 
+    position:fixed;
+  }
+  top:110px;
+  width:100%;
+  z-index: 100008; 
+  .cn-feat-search-group{
+    width:100%;
+    max-width:300px;
+    margin:0 auto;
+    .cn-feat-search-input{
+      width:100%;
+      max-width:100%;
+    }
+  }
+} 
+.cn-menu-mob {
+  display:none;
+  border-bottom: 1px solid #e5e5e5;	
+  min-height:300px;
+  background:#ffffff;
+  min-height: 0px;
+  @media(min-width:$nav-md-lg-1)
+  { 
+    position:fixed;
+  }
+  top:110px;
+  width:100%; 
+	z-index:999999;
+	left:0;
+	width:100%;
+	/* height:100%; */
+	background:rgba(#fff,1);
+	text-align: center;
+	.nav-overlay-close{
+		color:#fff;
+		font:800 1.8rem / 1.9rem 'PT Sans', sans-serif; 
+		margin-bottom: 20px;
+	}
+	ul{
+    margin:0;
+    padding:0;
+		li{
+			list-style-type: none;
+			a{
+				text-decoration: none;
+				text-transform: uppercase;
+				color:#232323;
+				display:block;
+				padding:15px;
+				font:800 20px 'PT Sans', sans-serif; 
+			}
+		}
+	}
+} 
+
+.cn-nav-shim{
+  height:0;
+  @media(min-width:$nav-md-lg-1)
+  { 
+    height:109px;
+  }
+}
+
+.silkscreen{
+	background: url(http://cas.threecordsstudio.com/wp-content/themes/cas/videos/checker.svg);
+	background-size:4px 4px, 100%;
+	background-repeat: repeat, no-repeat;
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:100vh;
+	pointer-events: none;
+	z-index:0;
+	opacity:0.3;
+	 @media(max-width:$nav-md-lg-1)
+  { 
+    top:109px;
+  }
+}
