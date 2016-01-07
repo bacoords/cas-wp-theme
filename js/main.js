@@ -25,72 +25,72 @@ angular.module('orderApp', [])
 			priceone:1975,
 			discounttwo:425,
 			discountthree:1025,
-			img: "http://cas.threecordsstudio.com/wp-content/themes/cas/images/block-18-4.png",
-			preview: "http://cas.threecordsstudio.com/wp-content/themes/cas/images/posters/18x4-Preview.jpg"
+			img: "http://cas.threecordsstudio.com/wp-content/themes/cas-wp-theme/images/block-18-4.png",
+			preview: "http://cas.threecordsstudio.com/wp-content/themes/cas-wp-theme/images/posters/18x4-Preview.jpg"
 		},
 		{
 			size:"18 x 2 Sponsorship",
 			priceone:1275,
 			discounttwo:250,
 			discountthree:625,
-			img: "http://cas.threecordsstudio.com/wp-content/themes/cas/images/block-18-2.png",
-			preview: "http://cas.threecordsstudio.com/wp-content/themes/cas/images/posters/18x2-Preview.jpg"
+			img: "http://cas.threecordsstudio.com/wp-content/themes/cas-wp-theme/images/block-18-2.png",
+			preview: "http://cas.threecordsstudio.com/wp-content/themes/cas-wp-theme/images/posters/18x2-Preview.jpg"
 		},
 		{
 			size:"6 x 4 Sponsorship",
 			priceone:845,
 			discounttwo:100,
 			discountthree:235,
-			img: "http://cas.threecordsstudio.com/wp-content/themes/cas/images/block-6-4.2.png",
-			preview: "http://cas.threecordsstudio.com/wp-content/themes/cas/images/posters/6x4-Preview.jpg"
+			img: "http://cas.threecordsstudio.com/wp-content/themes/cas-wp-theme/images/block-6-4.2.png",
+			preview: "http://cas.threecordsstudio.com/wp-content/themes/cas-wp-theme/images/posters/6x4-Preview.jpg"
 		},
 		{
 			size:"4 x 4 Sponsorship",
 			priceone:645,
 			discounttwo:100,
 			discountthree:235,
-			img: "http://cas.threecordsstudio.com/wp-content/themes/cas/images/block-4-4.png",
-			preview: "http://cas.threecordsstudio.com/wp-content/themes/cas/images/posters/4x4-Preview.jpg"
+			img: "http://cas.threecordsstudio.com/wp-content/themes/cas-wp-theme/images/block-4-4.png",
+			preview: "http://cas.threecordsstudio.com/wp-content/themes/cas-wp-theme/images/posters/4x4-Preview.jpg"
 		},
 		{
 			size:"6 x 6 Sponsorship",
 			priceone:1275,
 			discounttwo:250,
 			discountthree:625,
-			img: "http://cas.threecordsstudio.com/wp-content/themes/cas/images/block-6-6.png",
-			preview: "http://cas.threecordsstudio.com/wp-content/themes/cas/images/posters/6x6-Preview.jpg"
+			img: "http://cas.threecordsstudio.com/wp-content/themes/cas-wp-theme/images/block-6-6.png",
+			preview: "http://cas.threecordsstudio.com/wp-content/themes/cas-wp-theme/images/posters/6x6-Preview.jpg"
 		},
 		{
 			size:"6 x 8 Sponsorship",
 			priceone:1575,
 			discounttwo:350,
 			discountthree:825,
-			img: "http://cas.threecordsstudio.com/wp-content/themes/cas/images/block-6-8.png",
-			preview: "http://cas.threecordsstudio.com/wp-content/themes/cas/images/posters/6x8-Preview.jpg"
+			img: "http://cas.threecordsstudio.com/wp-content/themes/cas-wp-theme/images/block-6-8.png",
+			preview: "http://cas.threecordsstudio.com/wp-content/themes/cas-wp-theme/images/posters/6x8-Preview.jpg"
 		},
 		{
 			size:"3 x 2 Sponsorship",
 			priceone:375,
 			discounttwo:60,
 			discountthree:150,
-			img: "http://cas.threecordsstudio.com/wp-content/themes/cas/images/block-3-2.png",
-			preview: "http://cas.threecordsstudio.com/wp-content/themes/cas/images/posters/3x2-Preview.jpg"
+			img: "http://cas.threecordsstudio.com/wp-content/themes/cas-wp-theme/images/block-3-2.png",
+			preview: "http://cas.threecordsstudio.com/wp-content/themes/cas-wp-theme/images/posters/3x2-Preview.jpg"
 		},
 		{
 			size:"2 x 2 Sponsorship",
 			priceone:245,
 			discounttwo:50,
 			discountthree:135,
-			img: "http://cas.threecordsstudio.com/wp-content/themes/cas/images/block-2-2.png",
-			preview: "http://cas.threecordsstudio.com/wp-content/themes/cas/images/posters/2x2-Preview.jpg"
+			img: "http://cas.threecordsstudio.com/wp-content/themes/cas-wp-theme/images/block-2-2.png",
+			preview: "http://cas.threecordsstudio.com/wp-content/themes/cas-wp-theme/images/posters/2x2-Preview.jpg"
 		},
 		{
 			size:"4 x 2 Sponsorship",
 			priceone:445,
 			discounttwo:100,
 			discountthree:235,
-			img: "http://cas.threecordsstudio.com/wp-content/themes/cas/images/block-4-2.png",
-			preview: "http://cas.threecordsstudio.com/wp-content/themes/cas/images/posters/4x2-Preview.jpg"
+			img: "http://cas.threecordsstudio.com/wp-content/themes/cas-wp-theme/images/block-4-2.png",
+			preview: "http://cas.threecordsstudio.com/wp-content/themes/cas-wp-theme/images/posters/4x2-Preview.jpg"
 		}
 	]
 	return {
@@ -106,8 +106,8 @@ angular.module('orderApp', [])
 			priceone:645,
 			discounttwo:100,
 			discountthree:235,
-			img: "http://cas.threecordsstudio.com/wp-content/themes/cas/images/programs/1-2.png",
-			preview: "http://cas.threecordsstudio.com/wp-content/themes/cas/images/programs/1-2PagePreview.jpg",
+			img: "http://cas.threecordsstudio.com/wp-content/themes/cas-wp-theme/images/programs/1-2.png",
+			preview: "http://cas.threecordsstudio.com/wp-content/themes/cas-wp-theme/images/programs/1-2PagePreview.jpg",
 			mc: 0
 		},
 		{
@@ -115,8 +115,8 @@ angular.module('orderApp', [])
 			priceone:845,
 			discounttwo:100,
 			discountthree:235,
-			img: "http://cas.threecordsstudio.com/wp-content/themes/cas/images/programs/full.png",
-			preview: "http://cas.threecordsstudio.com/wp-content/themes/cas/images/programs/FullPagePreview.jpg",
+			img: "http://cas.threecordsstudio.com/wp-content/themes/cas-wp-theme/images/programs/full.png",
+			preview: "http://cas.threecordsstudio.com/wp-content/themes/cas-wp-theme/images/programs/FullPagePreview.jpg",
 			mc: 3
 		},
 		{
@@ -124,8 +124,8 @@ angular.module('orderApp', [])
 			priceone:245,
 			discounttwo:50,
 			discountthree:135,
-			img: "http://cas.threecordsstudio.com/wp-content/themes/cas/images/programs/1-16.png",
-			preview: "http://cas.threecordsstudio.com/wp-content/themes/cas/images/programs/1-16PagePreview.jpg",
+			img: "http://cas.threecordsstudio.com/wp-content/themes/cas-wp-theme/images/programs/1-16.png",
+			preview: "http://cas.threecordsstudio.com/wp-content/themes/cas-wp-theme/images/programs/1-16PagePreview.jpg",
 			mc: 0
 		},
 		{
@@ -133,8 +133,8 @@ angular.module('orderApp', [])
 			priceone:375,
 			discounttwo:60,
 			discountthree:150,
-			img: "http://cas.threecordsstudio.com/wp-content/themes/cas/images/programs/1-8.png",
-			preview: "http://cas.threecordsstudio.com/wp-content/themes/cas/images/programs/1-8PagePreview.jpg",
+			img: "http://cas.threecordsstudio.com/wp-content/themes/cas-wp-theme/images/programs/1-8.png",
+			preview: "http://cas.threecordsstudio.com/wp-content/themes/cas-wp-theme/images/programs/1-8PagePreview.jpg",
 			mc: 0
 		},
 		{
@@ -142,8 +142,8 @@ angular.module('orderApp', [])
 			priceone:445,
 			discounttwo:100,
 			discountthree:235,
-			img: "http://cas.threecordsstudio.com/wp-content/themes/cas/images/programs/1-4.png",
-			preview: "http://cas.threecordsstudio.com/wp-content/themes/cas/images/programs/1-4PagePreview.jpg",
+			img: "http://cas.threecordsstudio.com/wp-content/themes/cas-wp-theme/images/programs/1-4.png",
+			preview: "http://cas.threecordsstudio.com/wp-content/themes/cas-wp-theme/images/programs/1-4PagePreview.jpg",
 			mc: 0
 		},
 		{
@@ -151,8 +151,8 @@ angular.module('orderApp', [])
 			priceone:1575,
 			discounttwo:350,
 			discountthree:825,
-			img: "http://cas.threecordsstudio.com/wp-content/themes/cas/images/programs/center.png",
-			preview: "http://cas.threecordsstudio.com/wp-content/themes/cas/images/programs/DoubleTruckPreview.jpg",
+			img: "http://cas.threecordsstudio.com/wp-content/themes/cas-wp-theme/images/programs/center.png",
+			preview: "http://cas.threecordsstudio.com/wp-content/themes/cas-wp-theme/images/programs/DoubleTruckPreview.jpg",
 			mc: 2
 		}
 	]
@@ -169,8 +169,8 @@ angular.module('orderApp', [])
 			priceone:845,
 			discounttwo:100,
 			discountthree:235,
-			img: "http://cas.threecordsstudio.com/wp-content/themes/cas/images/programs/full.png",
-			preview: "http://cas.threecordsstudio.com/wp-content/themes/cas/images/programs/FullPagePreview.jpg",
+			img: "http://cas.threecordsstudio.com/wp-content/themes/cas-wp-theme/images/programs/full.png",
+			preview: "http://cas.threecordsstudio.com/wp-content/themes/cas-wp-theme/images/programs/FullPagePreview.jpg",
 			mc: 3
 		},
 		{
@@ -178,8 +178,8 @@ angular.module('orderApp', [])
 			priceone:1275,
 			discounttwo:250,
 			discountthree:625,
-			img: "http://cas.threecordsstudio.com/wp-content/themes/cas/images/programs/full.png",
-			preview: "http://cas.threecordsstudio.com/wp-content/themes/cas/images/programs/InsideCoversPreview.jpg",
+			img: "http://cas.threecordsstudio.com/wp-content/themes/cas-wp-theme/images/programs/full.png",
+			preview: "http://cas.threecordsstudio.com/wp-content/themes/cas-wp-theme/images/programs/InsideCoversPreview.jpg",
 			mc: 3
 		},
 		{
@@ -187,8 +187,8 @@ angular.module('orderApp', [])
 			priceone:1375,
 			discounttwo:300,
 			discountthree:700,
-			img: "http://cas.threecordsstudio.com/wp-content/themes/cas/images/programs/full.png",
-			preview: "http://cas.threecordsstudio.com/wp-content/themes/cas/images/programs/BackCoverPreview.jpg",
+			img: "http://cas.threecordsstudio.com/wp-content/themes/cas-wp-theme/images/programs/full.png",
+			preview: "http://cas.threecordsstudio.com/wp-content/themes/cas-wp-theme/images/programs/BackCoverPreview.jpg",
 			mc: 3
 		},
 		{
@@ -196,8 +196,8 @@ angular.module('orderApp', [])
 			priceone:1575,
 			discounttwo:350,
 			discountthree:825,
-			img: "http://cas.threecordsstudio.com/wp-content/themes/cas/images/programs/center.png",
-			preview: "http://cas.threecordsstudio.com/wp-content/themes/cas/images/programs/DoubleTruckPreview.jpg",
+			img: "http://cas.threecordsstudio.com/wp-content/themes/cas-wp-theme/images/programs/center.png",
+			preview: "http://cas.threecordsstudio.com/wp-content/themes/cas-wp-theme/images/programs/DoubleTruckPreview.jpg",
 			mc: 2
 		},
 		{
@@ -205,8 +205,8 @@ angular.module('orderApp', [])
 			priceone:1775,
 			discounttwo:400,
 			discountthree:925,
-			img: "http://cas.threecordsstudio.com/wp-content/themes/cas/images/programs/center.png",
-			preview: "http://cas.threecordsstudio.com/wp-content/themes/cas/images/programs/CenterFoldPreview.jpg",
+			img: "http://cas.threecordsstudio.com/wp-content/themes/cas-wp-theme/images/programs/center.png",
+			preview: "http://cas.threecordsstudio.com/wp-content/themes/cas-wp-theme/images/programs/CenterFoldPreview.jpg",
 			mc: 2
 		}
 	]
@@ -223,7 +223,7 @@ angular.module('orderApp', [])
 	$scope.posters = PosterFactory.all();
 //			$scope.sumSchoolName = "";
 	$scope.posterSelected=false;
-	$scope.sumPosterPreview = 'http://cas.threecordsstudio.com/wp-content/themes/cas/images/OrderMockupPosterONE.jpg';
+	$scope.sumPosterPreview = 'http://cas.threecordsstudio.com/wp-content/themes/cas-wp-theme/images/OrderMockupPosterONE.jpg';
 	$scope.seasonsSelected=false;
 	$scope.sumExtraTwoPrice = 0;
 	$scope.sumExtraOnePrice = 0;
@@ -365,7 +365,7 @@ angular.module('orderApp', [])
 	
 //			$scope.sumSchoolName = "";
 	$scope.posterSelected=false;
-	$scope.sumPosterPreview = 'http://cas.threecordsstudio.com/wp-content/themes/cas/images/programs/1-2PagePreview.jpg';
+	$scope.sumPosterPreview = 'http://cas.threecordsstudio.com/wp-content/themes/cas-wp-theme/images/programs/1-2PagePreview.jpg';
 	$scope.seasonsSelected=false;
 	$scope.sumExtraTwoPrice = 0;
 	$scope.sumExtraOnePrice = 0;
