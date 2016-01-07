@@ -107,10 +107,39 @@
 		<span class="padd-140"></span>
 		
 		<div class="frame frame-1500">
-			<div class="bit-1">
+			<div class="bit-75">
 				<div class="center">
 					<h3>RECENT HAPPENINGS</h3>
-					<img src="<?php echo get_template_directory_uri(); ?>/images/RecentHappenings2.png" alt="" class="center">
+<!--					<img src="<?php echo get_template_directory_uri(); ?>/images/RecentHappenings2.png" alt="" class="center">-->
+			<?php $query = new WP_Query( array('category_name'=>'press', 'posts_per_page' => 1 )); ?>
+			<?php if ( $query->have_posts() ) : while ( $query->have_posts() ) : $query->the_post(); ?>
+			
+					<a href="<?php the_permalink() ?>" ><?php the_post_thumbnail('full'); ?></a>
+			
+				<?php endwhile; 
+			 wp_reset_postdata();
+			 else : ?>
+					<p>
+						<?php _e( 'Sorry, no posts matched your criteria.' ); ?>
+					</p>
+					<?php endif; ?>
+				</div>
+			</div>
+			<div class="bit-25">
+				<div class="center">
+					<h3>RECENT BLOG</h3>
+						<?php $query = new WP_Query( array('category_name'=>'blog', 'posts_per_page' => 1 )); ?>
+			<?php if ( $query->have_posts() ) : while ( $query->have_posts() ) : $query->the_post(); ?>
+			
+					<a href="<?php the_permalink() ?>" ><?php the_post_thumbnail(array(500,500)); ?></a>
+			
+				<?php endwhile; 
+			 wp_reset_postdata();
+			 else : ?>
+					<p>
+						<?php _e( 'Sorry, no posts matched your criteria.' ); ?>
+					</p>
+					<?php endif; ?>		
 				</div>
 			</div>
 		</div>
