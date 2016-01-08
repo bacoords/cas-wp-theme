@@ -52,7 +52,7 @@
 						</div>	
 					</form>
 				
-					<img src="<?php echo get_template_directory_uri(); ?>/images/LOGOSWHITE.png" class="feat-as-seen center">
+					<img src="<?php echo get_template_directory_uri(); ?>/images/LOGOSWHITEnewnew.png" class="feat-as-seen center">
 			</div>
 			<div class="feature-learn-more center">
 				<p>Learn More</p>

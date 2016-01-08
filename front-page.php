@@ -110,8 +110,7 @@
 			<div class="bit-66">
 				<div class="center">
 					<h3>RECENT HAPPENINGS</h3>
-<!--					<img src="<?php echo get_template_directory_uri(); ?>/images/RecentHappenings2.png" alt="" class="center">-->
-			<?php $query = new WP_Query( array('category_name'=>'press', 'posts_per_page' => 1 )); ?>
+					<?php $query = new WP_Query( array('category_name'=>'press', 'posts_per_page' => 1 )); ?>
 			<?php if ( $query->have_posts() ) : while ( $query->have_posts() ) : $query->the_post(); ?>
 			
 					<a href="<?php the_permalink() ?>" ><?php the_post_thumbnail('cas-front-left'); ?></a>
