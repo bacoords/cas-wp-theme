@@ -114,7 +114,7 @@
 			<?php $query = new WP_Query( array('category_name'=>'press', 'posts_per_page' => 1 )); ?>
 			<?php if ( $query->have_posts() ) : while ( $query->have_posts() ) : $query->the_post(); ?>
 			
-					<a href="<?php the_permalink() ?>" ><?php the_post_thumbnail('full'); ?></a>
+					<a href="<?php the_permalink() ?>" ><?php the_post_thumbnail('cas-front-left'); ?></a>
 			
 				<?php endwhile; 
 			 wp_reset_postdata();
@@ -131,7 +131,7 @@
 						<?php $query = new WP_Query( array('category_name'=>'blog', 'posts_per_page' => 1 )); ?>
 			<?php if ( $query->have_posts() ) : while ( $query->have_posts() ) : $query->the_post(); ?>
 			
-					<a href="<?php the_permalink() ?>" ><?php the_post_thumbnail('thumbnail'); ?></a>
+					<a href="<?php the_permalink() ?>" ><?php the_post_thumbnail('cas-front-right'); ?></a>
 			
 				<?php endwhile; 
 			 wp_reset_postdata();

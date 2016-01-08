@@ -50,7 +50,9 @@ function baw_hack_wp_title_for_home( $title )
 //Support Post thumbnails
 add_theme_support( 'post-thumbnails', array( 'page', 'post' ) );      
 
-
+//Add custom thumbnails
+add_image_size( 'cas-front-left', 800, 400, true );
+add_image_size ('cas-front-right', 800, 400, true);
 
 //Register our Menus
 function register_my_menus() {
