@@ -134,7 +134,7 @@ $testimonial_achievements = get_post_meta( get_the_ID(),'_cas_school_testimonial
 					<div class="frame frame-mini">
 						<div class="bit-2">
 							<div class="padding">
-								<span class="button button-large button-block button-round button-small sponsor-form-link">SPONSOR US</span>
+								<a href="#sponsor" class="button button-large button-block button-round button-small sponsor-form-link">SPONSOR US</a>
 							</div>
 						</div>
 						<div class="bit-2">
@@ -147,7 +147,7 @@ $testimonial_achievements = get_post_meta( get_the_ID(),'_cas_school_testimonial
 			</div>
 		</div>
 	</div>
-
+<div id="sponsor"></div>
 	<?php if($progorpost =='poster'){ ?> 
 		<div class="row-schools-sponsor-form" ng-controller="PosterCtrl">
 	<?php } elseif ($progorpost == 'program'){?>
