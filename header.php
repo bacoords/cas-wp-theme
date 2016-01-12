@@ -69,9 +69,18 @@
 		<div class="bit-1">
 			<div class="tagline tagline-sponsors">
 				<h1 class="animated fadeIn">WELCOME <br>TO THE TEAM.</h1>
-				<h2 class="animated fadeIn">A Community Based Approach to Sustaining <br>High School Athletics and Promoting Local Business.</h2>
+				<h2 class="animated fadeIn">“I would reccomend every High School in the country
+to use Community All-Stars.”<BR><span style="font-weight:700">Kevin Biggs - Mission Viejo HS Principal</span></h2>
 				 
-					<img src="<?php echo get_template_directory_uri(); ?>/images/AsSeenIn.3.png" class="feat-as-seen">
+							  <form role="search" action="<?php echo site_url('/'); ?>" method="get" id="searchform">
+						<div class="feat-search-group">
+								<input type="text" class="feat-search-input" placeholder="Search for a school to sponsor" name="s">
+								<input type="hidden" name="post_type" value="cas_school" /> <!-- // hidden 'products' value -->
+									<span class=feat-search-button-span>
+								<input class="feat-search-button" type="submit" value=" ">
+							</span>
+						</div>	
+					</form>
 			</div>
 			
 			<div class="feature-learn-more center">
