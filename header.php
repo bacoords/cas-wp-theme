@@ -23,7 +23,7 @@
 <?php if (( has_post_thumbnail() ) && ( !is_front_page() ) && (!is_category()) && (!is_archive()) ) { 
 		$posturl = wp_get_attachment_url( get_post_thumbnail_id($post->ID) );
 		?>
-		 <div class ="feature feature-cover-photo" style="background:url('<?php echo $posturl; ?>') no-repeat center; background-size:cover;">
+		 <div class ="feature feature-cover-photo <?php if(is_page('sponsors')){ ?> feature-sponsors <?php } ?>" style="background:url('<?php echo $posturl; ?>') no-repeat center; background-size:cover;">
 <?php } ?>
 
 
@@ -64,8 +64,7 @@
 		
 <?php } elseif(is_page('sponsors')) {  ?>
 	
-<!--
-<div class="feature feature-sponsors">
+<!--<div class="feature feature-sponsors">-->
 	<div class="frame">
 		<div class="bit-1">
 			<div class="tagline tagline-sponsors">
@@ -82,7 +81,6 @@
 		</div>
 	</div>
 	</div>
--->
 	
 	
 <?php }  elseif(is_page('portfolio')) {  ?>
