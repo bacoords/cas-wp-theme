@@ -74,7 +74,7 @@
 				 	<div class="bit-3">
 							  <form role="search" action="<?php echo site_url('/'); ?>" method="get" id="searchform">
 						<div class="feat-search-group">
-								<input type="text" class="feat-search-input" placeholder="Search for a school to sponsor" name="s">
+								<input type="text" class="feat-search-input feat-search-input-black" name="s">
 								<input type="hidden" name="post_type" value="cas_school" /> <!-- // hidden 'products' value -->
 									<span class=feat-search-button-span>
 								<input class="feat-search-button" type="submit" value=" ">
