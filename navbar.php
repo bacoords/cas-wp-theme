@@ -9,20 +9,21 @@
   </div>
   <div class="cnt-right">
     <ul>
+      <li><a href="<?php echo site_url(); ?>/invoice/">Pay Invoice</a></li>
       <li><a href="<?php echo site_url(); ?>/upload/">Upload Pics</a></li>
       <li><a href="<?php echo site_url(); ?>/contact/#email">Email</a></li>
       <li><a href="<?php echo site_url(); ?>/sponsors/#faq">FAQ</a></li>
-      <li><a href="http://cas.threecordsstudio.com/checkout/" class="cnt-cart"><img src="http://cas.threecordsstudio.com/wp-content/themes/cas-wp-theme/images/shoppingcartbig.png" alt="Cart"></a></li>
+      <li><a href="<?php echo site_url(); ?>/checkout/" class="cnt-cart"><img src="<?php echo site_url(); ?>/wp-content/themes/cas-wp-theme/images/shoppingcartbig.png" alt="Cart"></a></li>
     </ul>  
   </div>
 </div>
 <div class="cas-nav">
   <div class="cn-left">
     <div class="cn-logo-sm">
-      <a href="<?php echo site_url('/'); ?>"><img src="http://cas.threecordsstudio.com/wp-content/themes/cas-wp-theme/images/caslogo.2.png" alt="Logo" /></a>
+      <a href="<?php echo site_url('/'); ?>"><img src="<?php echo site_url(); ?>/wp-content/themes/cas-wp-theme/images/caslogo.2.png" alt="Logo" /></a>
     </div>
     <div class="cn-logo-lg">
-      <a href="<?php echo site_url('/'); ?>"><img src="http://cas.threecordsstudio.com/wp-content/themes/cas-wp-theme/images/CASLogoBIG.png" alt="Logo" /></a>
+      <a href="<?php echo site_url('/'); ?>"><img src="<?php echo site_url(); ?>/wp-content/themes/cas-wp-theme/images/CASLogoBIG.png" alt="Logo" /></a>
     </div>
   </div>
   <div class="cn-center">
@@ -42,7 +43,7 @@
         </form>
     </div>
     <div class="cn-search-sm">
-      <a class="cn-search-mob-link"><img src="http://cas.threecordsstudio.com/wp-content/themes/cas-wp-theme/images/searchIconblack.png" alt="" /></a>
+      <a class="cn-search-mob-link"><img src="<?php echo site_url(); ?>/wp-content/themes/cas-wp-theme/images/searchIconblack.png" alt="" /></a>
     </div>
     <div class="cn-mob-link">
       <span class="cn-menu-mob-link">&#9776;</span>
