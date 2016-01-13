@@ -390,10 +390,14 @@ height: 170px;
 	background: url(http://cas.threecordsstudio.com/wp-content/themes/cas-wp-theme/images/newvideo.jpg) no-repeat center;
 	background-size:cover;
 //	min-height: 850px;
-	height: -webkit-calc(100vh - 269px);
-  height: -moz-calc(100vh - 269px);
-  height: calc(100vh - 269px);
-	padding-top:40%;
+	min-height: -webkit-calc(100vh - 269px);
+  min-height: -moz-calc(100vh - 269px);
+  min-height: calc(100vh - 269px);
+	padding-top:100px;
+	@media(min-width:$large){
+	padding-top:370px;
+		
+	}
 	h3{
 		font-family: 'Lato', sans-serif;
 		font-size:16px;
