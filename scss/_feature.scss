@@ -270,6 +270,14 @@
 	
 	.tagline-sponsors{
 		padding-top:300px;
+		h1{
+			
+			line-height: 34px;
+		}
+		.feat-search-group{
+			
+			margin-left:0px !important;
+		}
 		@media(max-width:$x-large){
 			padding-top:200px;
 		}
