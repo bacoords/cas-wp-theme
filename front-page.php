@@ -109,7 +109,7 @@
 		<div class="frame frame-1500">
 			<div class="bit-66">
 				<div class="center">
-					<h3>RECENT HAPPENINGS</h3>
+					<h3 style="line-height: 35px;">RECENT HAPPENINGS</h3>
 					<?php $query = new WP_Query( array('category_name'=>'press', 'posts_per_page' => 1 )); ?>
 			<?php if ( $query->have_posts() ) : while ( $query->have_posts() ) : $query->the_post(); ?>
 			
@@ -126,7 +126,7 @@
 			</div>
 			<div class="bit-3">
 				<div class="center">
-					<h3>RECENT BLOG</h3>
+					<h3 style="line-height: 35px;">RECENT BLOG</h3>
 						<?php $query = new WP_Query( array('category_name'=>'blog', 'posts_per_page' => 1 )); ?>
 			<?php if ( $query->have_posts() ) : while ( $query->have_posts() ) : $query->the_post(); ?>
 			
@@ -164,7 +164,7 @@
 			</div>
 			<div class="bit-75">
 				<div class="logo-row-grey">
-					<p class="text-center">We are a full service branding and funding solution designed exclusively for high school athletics.</p>
+					<p class="text-center" style="font-weight:400;">We are a full service branding and funding solution designed exclusively for high school athletics.</p>
 				</div>
 			</div>
 		</div>
