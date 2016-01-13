@@ -68,8 +68,8 @@
 	<div class="frame">
 		<div class="bit-1">
 			<div class="tagline tagline-sponsors">
-				<h1 class="animated fadeIn">WELCOME <br>TO THE TEAM.</h1>
-				<h2 class="animated fadeIn"><em>“I would reccomend every High School in the country<BR>to use Community All-Stars.”</em><BR><br><span style="font-weight:700">Kevin Biggs - Mission Viejo HS Principal</span></h2>
+				<h1 class="animated fadeIn">WELCOME TO THE TEAM.</h1>
+				<h2 class="animated fadeIn"><em>“I would reccomend every High School in the country<BR>to use Community All-Stars.”</em><BR><span style="font-weight:700;display: block;margin-top: 15px;margin-bottom: 15px;">Kevin Biggs - Mission Viejo HS Principal</span></h2>
 				 <div class="frame">
 				 	<div class="bit-3">
 							  <form role="search" action="<?php echo site_url('/'); ?>" method="get" id="searchform">
