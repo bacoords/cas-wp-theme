@@ -8,7 +8,7 @@
 	<title>
 		<?php wp_title( ' | ', true, 'right' ); ?> Community All Stars
 	</title>
-	<link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/scss/style.css?v=1.0.0" />
+	<link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/scss/style.css?v=1.0.1" />
 	<?php wp_head(); ?>
 </head>
 

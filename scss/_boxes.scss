@@ -310,7 +310,27 @@ height: 170px;
 		}
 	}
 
-
+.bg-black{
+  background:#000;
+}
+.new-hover-out{
+  padding:0;
+  &:hover{
+    padding:0;
+  }
+}
+.new-hover{
+  padding:5px; padding-top:55px;
+  height:100%;
+			-webkit-transition: all 500ms ease;
+			-moz-transition: all 500ms ease;
+			-o-transition: all 500ms ease;
+			transition: all 500ms ease;
+  &:hover{
+  
+    background:rgba(0,0,0,0.7);
+  }
+}
 
 //Teams
 
