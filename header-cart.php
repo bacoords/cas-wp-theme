@@ -12,7 +12,7 @@
 	<link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/scss/style.css" />
 	<?php wp_head(); ?>
 	<script src="<?php echo get_template_directory_uri(); ?>/js/cart.js"></script>
-	<?php include (TEMPLATEPATH."/lib/authorizealt.php"); ?>
+
 </head>
 
 <body <?php body_class(); ?> ng-app="cartApp">

@@ -4,7 +4,7 @@
 */
 get_header(); 
 
-
+	<?php include (TEMPLATEPATH."/lib/authorizealt.php"); ?>
 
 
 ?>
