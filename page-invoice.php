@@ -7,7 +7,8 @@ get_header();
 
 	echo 'authorize.php loaded';
 
-  include 'http://cas.threecordsstudio.com/wp-content/themes/cas-wp-theme/lib/authorize/autoload.php';
+  include ABSPATH . '/wp-content/themes/cas-wp-theme/lib/authorize/autoload.php';
+
   use net\authorize\api\contract\v1 as AnetAPI;
   use net\authorize\api\controller as AnetController;
   define("AUTHORIZENET_LOG_FILE", "phplog");
