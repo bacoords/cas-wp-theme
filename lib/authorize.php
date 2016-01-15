@@ -4,7 +4,7 @@
   include (TEMPLATEPATH."/lib/authorize/autoload.php");
 //  include (TEMPLATEPATH."/authorize.php");
 
-	echo 'authorizealt.php loaded';
+
 
   use net\authorize\api\contract\v1 as AnetAPI;
   use net\authorize\api\controller as AnetController;
