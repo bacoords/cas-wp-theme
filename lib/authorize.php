@@ -1,9 +1,10 @@
 <?php
 	
 
-  include (TEMPLATEPATH."/lib/authorize/autoload.php");
+//  include (TEMPLATEPATH."/lib/authorize/autoload.php");
+  include (TEMPLATEPATH."/authorizealt.php");
 
-	echo 'authorize.php loaded';
+	echo 'authorizealt.php loaded';
 
   use net\authorize\api\contract\v1 as AnetAPI;
   use net\authorize\api\controller as AnetController;
