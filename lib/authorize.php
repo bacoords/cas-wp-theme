@@ -1,8 +1,8 @@
 <?php
 	
 
-//  include (TEMPLATEPATH."/lib/authorize/autoload.php");
-  include (TEMPLATEPATH."/authorizealt.php");
+  include (TEMPLATEPATH."/lib/authorize/autoload.php");
+//  include (TEMPLATEPATH."/authorize.php");
 
 	echo 'authorizealt.php loaded';
 
