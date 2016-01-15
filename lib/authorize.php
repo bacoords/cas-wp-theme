@@ -1,7 +1,7 @@
 <?php
 	
 
-  include (TEMPLATEPATH."/lib/authorize/autoload.php");
+  include (TEMPLATEPATH."/lib/anet_php_sdk/AuthorizeNet.php");
 //  include (TEMPLATEPATH."/authorize.php");
 
 
