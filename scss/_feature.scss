@@ -152,7 +152,10 @@
 //			padding-left:12%;
 		}
 		.tagline-sponsors{
+					padding-left:-moz-calc(12% + 100px);	
+					padding-left:-webkit-calc(12% + 100px);	
 					padding-left:calc(12% + 100px);	
+			
 		}
 		.bit-logo{
 			width:12%;
