@@ -6,7 +6,7 @@ get_header();
 
 
 
-  include(TEMPLATEPATH."/lib/authorize/autoload.php");
+  include (TEMPLATEPATH."/lib/authorize/autoload.php");
 
 	echo 'authorize.php loaded';
 
