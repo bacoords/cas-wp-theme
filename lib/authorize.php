@@ -100,4 +100,6 @@
   {
     echo  "Charge Credit card Null response returned";
   }
+
+echo 'end author';
 ?>
