@@ -4,7 +4,7 @@
  *
  * @package AuthorizeNet
  */
-echo 'autoloda';
+
 spl_autoload_register(function($className) {
     static $classMap;
 
