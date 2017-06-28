@@ -39,13 +39,14 @@ $testimonial_achievements = get_post_meta( get_the_ID(),'_cas_school_testimonial
 
 
 
-<div class="feature feature-schools" style="background:url('http://cas.threecordsstudio.com/wp-content/uploads/2015/11/Background.jpg') no-repeat center; background-size:cover;">
+<div class="feature feature-schools" style="background:url('https://communityallstars.com/wp-content/uploads/2015/11/Background.jpg') no-repeat center; background-size:cover;">
 	
 	
 
 		<div class="school-poster">
 				<?php  
 						$z = 0;
+			$img_size = 'full';
 						foreach ( (array) $previous_posters as $attachment_id => $attachment_url ) {
 							if($z == 0){
 								echo '<a href="' . $attachment_url . '" class="venobox" data-gall="thumbs">';
@@ -62,7 +63,7 @@ $testimonial_achievements = get_post_meta( get_the_ID(),'_cas_school_testimonial
 						
 						}
 						if($z == 0){ ?>
-							<img width="354" height="528" src="http://cas.threecordsstudio.com/wp-content/uploads/2015/09/Aptos-LARGE-F15-Poster.png" class="Poster" alt="Aptos-LARGE-F15-Poster">
+							<img width="354" height="528" src="https://communityallstars.com/wp-content/uploads/2015/09/Aptos-LARGE-F15-Poster.png" class="Poster" alt="Aptos-LARGE-F15-Poster">
 					<?php 	}		?>
 		    
 
@@ -133,6 +134,7 @@ $testimonial_achievements = get_post_meta( get_the_ID(),'_cas_school_testimonial
 			<div class="bit-1">
 				<div class="center padding">
 					<h2>We are looking for sponsors. Help us meet our Goal.</h2>
+<!--
 					<div class="frame frame-mini">
 						<div class="bit-2">
 							<div class="padding">
@@ -141,10 +143,11 @@ $testimonial_achievements = get_post_meta( get_the_ID(),'_cas_school_testimonial
 						</div>
 						<div class="bit-2">
 							<div class="padding">
-								<a class="button button-large button-outline button-round button-small" href="http://cas.threecordsstudio.com/invoice/">PAY INVOICE</a>
+								<a class="button button-large button-outline button-round button-small" href="https://communityallstars.com/invoice/">PAY INVOICE</a>
 							</div>
 						</div>
 					</div>
+-->
 				</div>
 			</div>
 		</div>
@@ -170,8 +173,10 @@ $testimonial_achievements = get_post_meta( get_the_ID(),'_cas_school_testimonial
 										<h4><span class="circle-number">1</span> Choose Ad Size</h4>
 										<div class="frame">
 											<div class="bit-1">
-												<ul class="adb-selectable adb-ad-size">
-													<li ng-repeat="poster in posters" class="adb-img-float-left" ng-click="selectPoster(poster)"><img ng-src="{{poster.img}}"></li>
+												<ul class="adb-selectable adb-selectable-blue-inner adb-ad-size">
+													<li ng-repeat="poster in posters" class="adb-img-float-left" ng-click="selectPoster(poster)">
+														{{poster.size_strict}}
+													</li>
 												</ul>
 											</div>
 										</div>
@@ -231,7 +236,7 @@ $testimonial_achievements = get_post_meta( get_the_ID(),'_cas_school_testimonial
 								<h4><span class="circle-number">2</span> Choose the number of seasons</h4>
 								<div class="frame">
 									<div class="bit-1">
-										<ul class="adb-selectable adb-seasons">
+										<ul class="adb-selectable adb-selectable-blue-glow adb-seasons">
 											<li class="adb-promo-box promo-third ng-class:{'ui-selected' : adbSeasonThree}" ng-click="selectSeasons(3)">
 												<p>FULL YEAR</p>
 												<p class="promo-price">${{sumPoster.discountthree}} DISCOUNT</p>
@@ -250,15 +255,17 @@ $testimonial_achievements = get_post_meta( get_the_ID(),'_cas_school_testimonial
 										</ul>
 									</div>
 								</div>
+<!--
 								<br><br>
 								<h6 class="center">We ship a poster to you every season. Fall deadline is June 30th, Winter Deadline is October 30th, <br>Spring Deadline January 30th. If deadline has passed you will be pushed to the next season.</h6>
+-->
 								<br><br>
 							</div>
 							<div class="form-item form-item-bottom-line animate-if" ng-if="seasonsSelected">
 								<h4><span class="circle-number">3</span> Exclusive Products</h4>
 								<div class="frame">
 									<div class="bit-1">
-										<ul class="adb-selectable adb-products">
+										<ul class="adb-selectable adb-selectable-blue-glow adb-products">
 											<li class="adb-promo-box promo-half ng-class:{'ui-selected' : adbExtraOne}" ng-click="selectExtras(1)">
 												<p>POCKET SCHEDULES</p><br>
 												<img src="<?php echo get_template_directory_uri(); ?>/images/pocketschedules.2.png"><br>
@@ -274,6 +281,7 @@ $testimonial_achievements = get_post_meta( get_the_ID(),'_cas_school_testimonial
 										</ul>
 									</div>
 								</div>
+<!--
 								<div class="frame">
 									<div class="bit-2">
 										<div class="center">
@@ -286,23 +294,48 @@ $testimonial_achievements = get_post_meta( get_the_ID(),'_cas_school_testimonial
 										</div>
 									</div>
 								</div>
+-->
 								<br><br>
 							</div>
 							<div class="form-item form-item-grey" ng-if="seasonsSelected">
 								<div class="center">
 									<br>
-									<a ng-click="addToBag()" class="button button-small button-block button-inline button-round">ADD TO BAG</a>
+									<a ng-click="addToBag()" class="button button-small button-block button-inline button-round">ADD TO CART</a>
 									<br><br>
 								</div>
 								
 							</div>
+									<?php $attached = get_post_meta( get_the_ID(), '_attached_cmb2_attached_posts', true );
+										if($attached){ ?>
+										
 							<div class="form-item">
 								<p class="center">Check out more schools Nearby</p>
 								<br><br>
-								<br>
-								<h6>Coming Soon</h6>
+								<div class="frame">
+										<?php
+											foreach ( $attached as $attached_post ) {
+											$post = get_post( $attached_post ); 
+											$near_logo = get_post_meta( $attached_post,'_cas_school_logo', true );
+											$near_name = get_post_meta( $attached_post,'_cas_school_name', true );
+											
+											$near_mascot = get_post_meta( get_the_ID(),'_cas_school_mascot', true );
+											?>
+											<div class="bit-2">
+												<div class="schools-nearby">
+													<a href="<?php echo the_permalink($attached_post); ?>" alt="<?php echo $near_name; ?>">
+														<img src="<?php echo $near_logo; ?>" alt="<?php echo $near_name; ?>" class="center"></a>
+													
+															<p class="center"><a href="<?php echo the_permalink($attached_post); ?>" alt="<?php echo $near_name; ?>"><?php echo $near_name; ?><BR><strong class="uppercase"><?php echo $near_mascot; ?></strong></a></p>
+													
+												</div>
+											</div>
+									<?php } ?> 
+									
+								</div>
 								<br><br>
 							</div>
+									
+									<?php	} ?>
 						</div>
 					</div>
 				</div>
@@ -330,7 +363,7 @@ $testimonial_achievements = get_post_meta( get_the_ID(),'_cas_school_testimonial
 								
 								<br><br>
 								<div class="center" ng-show="seasonsSelected">
-									<a href="http://cas.threecordsstudio.com/checkout/" ng-click="checkOut()" class="button button-small button-block button-inline button-round">CHECK OUT</a>
+									<a href="https://communityallstars.com/checkout/" ng-click="checkOut()" class="button button-small button-block button-inline button-round">CHECK OUT</a>
 								</div>
 								<br><br>
 							</div>

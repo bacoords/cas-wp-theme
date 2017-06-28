@@ -30,6 +30,11 @@ function my_scripts_method() {
 		'//cdn.jsdelivr.net/jquery.slick/1.5.7/slick.min.js',
 		array( 'jquery' )
 	);
+	wp_enqueue_script(
+		'parsley.js',
+		'https://cdnjs.cloudflare.com/ajax/libs/parsley.js/2.2.0/parsley.min.js',
+		array( 'jquery' )
+	);
 //	 wp_enqueue_script('jquery-ui', 'http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.6/jquery-ui.min.js', array('jquery'), '1.8.6');
  	wp_enqueue_script('angular', 'https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js', array('jquery'));
 }
@@ -51,8 +56,56 @@ function baw_hack_wp_title_for_home( $title )
 add_theme_support( 'post-thumbnails', array( 'page', 'post' ) );      
 
 //Add custom thumbnails
-add_image_size( 'cas-front-left', 800, 400, true );
-add_image_size ('cas-front-right', 400, 400, true);
+//add_image_size( 'cas-front-left', 800, 400, true );
+//add_image_size ('cas-front-right', 400, 400, true);
+
+
+
+
+//
+// Custom Login Page Logo
+//
+function my_login_logo() { ?>
+    <style type="text/css">
+        body.login div#login h1 a {
+            background-image: url(https://communityallstars.com/wp-content/themes/cas-wp-theme/images/CASLogoBIG.png);
+            background-size:198px 40px;
+            width: 198px; 
+            height: 40px;
+        }
+    </style>
+<?php }
+add_action( 'login_enqueue_scripts', 'my_login_logo' );
+
+function my_login_logo_url() {
+    return home_url();
+}
+add_filter( 'login_headerurl', 'my_login_logo_url' );
+
+function my_login_logo_url_title() {
+    return 'Community All Stars';
+}
+add_filter( 'login_headertitle', 'my_login_logo_url_title' );
+
+
+
+
+
+//Reduce Excerpt Length
+function custom_excerpt_length( $length ) {
+return 30;
+}
+add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );
+
+function continue_reading_link() {
+	return '';
+}
+
+function auto_excerpt_more( $more ) {
+	return ' &hellip;' . continue_reading_link();
+}
+add_filter( 'excerpt_more', 'auto_excerpt_more' );
+
 
 //Register our Menus
 function register_my_menus() {
@@ -122,13 +175,37 @@ function create_post_type() {
 
 			),
 		'public' => true,
-		'has_archive' => true,
+		'has_archive' => false,
 		'menu_position' => 20,
 		'menu_icon' => 'dashicons-location',
 		'supports' => array(
 				'title', 'revisions',
 				),
 		'rewrite' => array('slug' => 'schools'),
+
+		)
+	);
+	register_post_type( 'cas_invoice',
+		array(
+			'labels' => array(
+				'name' => __( 'Invoices' ),
+				'singular_name' => __( 'Invoice' ),
+				'add_new_item'  => __( 'Add New Invoice' ),
+				'new_item'       => __( 'New Invoice' ),
+				'edit_item'          => __( 'Edit Invoice' ),
+				'view_item'          => __( 'View Invoice' ),
+				'all_items'          => __( 'All Invoices' )
+
+			),
+		'public' => false,
+		'show_ui' => true,
+		'has_archive' => false,
+		'menu_position' => 20,
+		'menu_icon' => 'dashicons-cart',
+		'supports' => array(
+				'title', 'editor', 'revisions',
+				),
+//		'rewrite' => array('slug' => 'schools'),
 
 		)
 	);
@@ -218,6 +295,12 @@ function cas_school_metaboxes() {
                 'type' => 'textarea'
             ));
             $cmb->add_field(array(
+                'name' => 'City Info',
+//                'desc' => '',
+                'id' => $prefix . 'city_info',
+                'type' => 'textarea'
+            ));
+            $cmb->add_field(array(
                 'name' => 'Seasons and Sports',
 //                'desc' => '',
                 'id' => $prefix . 'season_sports',
@@ -279,6 +362,18 @@ function cas_school_metaboxes_two() {
                 'name' => 'School Website',
                 'desc' => '(must start with http://)',
                 'id' => $prefix . 'site_url',
+                'type' => 'text_url'
+            ));
+            $cmb_two->add_field(array(
+                'name' => 'Team Bank URL',
+                'desc' => '(must start with http://)',
+                'id' => $prefix . 'team_bank_url',
+                'type' => 'text_url'
+            ));
+            $cmb_two->add_field(array(
+                'name' => 'Salesforce URL',
+                'desc' => '(must start with http://)',
+                'id' => $prefix . 'salesforce_url',
                 'type' => 'text_url'
             ));
 }
@@ -398,6 +493,31 @@ function cas_school_metaboxes_five() {
             ));
 
 }
+function cmb2_attached_posts_field_metaboxes_example() {
+
+	$example_meta = new_cmb2_box( array(
+		'id'           => 'cmb2_attached_posts_field',
+		'title'        => __( 'Nearby Schools', 'cmb2' ),
+		'object_types' => array( 'cas_school' ), // Post type
+		'context'      => 'normal',
+		'priority'     => 'high',
+		'show_names'   => false, // Show field names on the left
+	) );
+
+	$example_meta->add_field( array(
+		'name'    => __( 'Selected Schools', 'cmb2' ),
+		'desc'    => __( 'Drag schools from the left column to the right column to attach them to this page.<br />You may rearrange the order of the schools in the right column by dragging and dropping.', 'cmb2' ),
+		'id'      => '_attached_cmb2_attached_posts',
+		'type'    => 'custom_attached_posts',
+		'options' => array(
+			'show_thumbnails' => true, // Show thumbnails on the left
+			'filter_boxes'    => true, // Show a text box for filtering the results
+			'query_args'      => array( 'posts_per_page'=>-1 , 'post_type'=> 'cas_school' ), // override the get_posts args
+		)
+	) );
+
+}
+add_action( 'cmb2_init', 'cmb2_attached_posts_field_metaboxes_example' );
 
 
 ?>

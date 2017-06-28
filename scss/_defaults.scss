@@ -13,7 +13,12 @@ body{
     z-index:100009;
     }
 
-
+img.alignright {float:right; margin:0 0 1em 1em}
+img.alignleft {float:left; margin:0 1em 1em 0}
+img.aligncenter {display: block; margin-left: auto; margin-right: auto}
+a img.alignright {float:right; margin:0 0 1em 1em}
+a img.alignleft {float:left; margin:0 1em 1em 0}
+a img.aligncenter {display: block; margin-left: auto; margin-right: auto}
 
 img{
 	max-width: 100%;
@@ -54,6 +59,9 @@ img{
 .padding-22{
 	padding:22px;
 }
+.padding-22--top{
+	padding-top:22px;
+}
 .max-para-375{
 	max-width: 375px;
 	margin: 0 auto;
@@ -82,9 +90,21 @@ img.center{
 	display:block;
 	margin: 0 auto;
 }
-
+a.linkify-img img{
+	-webkit-transition: all 500ms ease;
+	-moz-transition: all 500ms ease;
+	-o-transition: all 500ms ease;
+	transition: all 500ms ease;
+	opacity:1;
+		&:hover{
+			opacity:0.5;
+			}
+}
 .text-right{
 	text-align: right;
+}
+.text-left{
+	text-align: left;
 }
 .uppercase{
 	text-transform: uppercase;

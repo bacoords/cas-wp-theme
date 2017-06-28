@@ -4,7 +4,10 @@
 */
 get_header(); 
 
- include (TEMPLATEPATH."/lib/authorize.php");
+ 
+if (!empty($_POST)){
+	include (TEMPLATEPATH."/lib/authorize.php");
+}
 
 
 ?>
@@ -20,9 +23,9 @@ get_header();
 			<div class="bit-1">
 			<br><br><br>
 				<h2 class="center">Invoice Payment Portal</h2>
-				<p class="center">Thank you for your sponsorship, please fill out the form <br> below to complete your payment</p>
+				<p class="center">Thank you for your sponsorship! Please fill out the form <br> below to complete your payment</p>
 				<br><br><br>
-			<form id="pay-form" action="" method="post">
+			<form id="pay-form" action="" method="post" data-validate="parsley">
 				<div class="form-panel">
 					<div class="form-item">
 						<div class="frame">
@@ -30,10 +33,10 @@ get_header();
 								<div class="padding">
 									<h4>Invoice Information <span class="circle-number invoice-overlay-one-open cursor-pointer">?</span></h4>
 									<div class="padding" style="max-width:250px">
-										<input type="text" placeholder="Invoice Number*" class="form-input" name="invoice">
+										<input type="text" placeholder="Invoice Number*" class="form-input" name="invoice" required>
 									</div>
 									<div class="padding" style="max-width:250px">
-										<input type="text" placeholder="Amount (U.S. $)*" class="form-input" name="amount">
+										<input type="text" placeholder="Amount (U.S. $)*" class="form-input" name="amount" required>
 										<h6 class="text-right">*required</h6>
 									</div>
 									
@@ -45,32 +48,32 @@ get_header();
 									<div class="frame">
 										<div class="bit-2">
 											<div class="padding">
-													<input type="text" placeholder="First Name*" class="form-input" name="first_name">
+													<input type="text" placeholder="First Name*" class="form-input" name="first_name" required>
 											</div>
 										</div>
 										<div class="bit-2">
 											<div class="padding">
-												<input type="text" placeholder="Last Name*" class="form-input" name="last_name">
+												<input type="text" placeholder="Last Name*" class="form-input" name="last_name" required>
 											</div>
 										</div>
 									</div>
 									<div class="padding">
-										<input type="text" placeholder="Organization Name*" class="form-input" name="organization">
+										<input type="text" placeholder="Organization Name*" class="form-input" name="organization" required>
 									</div>
 									<div class="frame">
 										<div class="bit-20">
 											<div class="padding">
-												<input type="tel" placeholder="Area Code*" class="form-input" name="phone_area">
+												<input type="tel" placeholder="Area Code*" class="form-input" name="phone_area" required>
 											</div>
 										</div>
 										<div class="bit-40">
 											<div class="padding">
-												<input type="tel" placeholder="Primary Phone*" class="form-input" name="phone_number">
+												<input type="tel" placeholder="Primary Phone*" class="form-input" name="phone_number" required>
 											</div>
 										</div>
 									</div>
 									<div class="padding">
-										<input type="email" placeholder="Email Address*" class="form-input" name="email">
+										<input type="email" placeholder="Email Address*" class="form-input" name="email" required>
 									</div>
 									<h6 class="text-right">*required</h6
 								</div>
@@ -95,14 +98,14 @@ get_header();
 					<div class="frame">
 						<div class="bit-2">
 							<div class="padding">
-								<input type="text" placeholder="Debit/Credit Card Number*" class="form-input" name="cc_card">
+								<input type="text" placeholder="Debit/Credit Card Number* (no dashes)" class="form-input" name="cc_card" required>
 							</div>
 						</div>
 						<div class="bit-2">
 							<div class="frame">
 								<div class="bit-4">
 									<div class="padding">
-										<input type="text" placeholder="Security Code*" class="form-input">
+										<input type="text" placeholder="Security Code*" class="form-input" required>
 									</div>
 								</div>
 								<div class="bit-4">
@@ -112,7 +115,7 @@ get_header();
 								</div>
 								<div class="bit-4">
 									<div class="padding">
-										<select class="form-input" name="cc_month">
+										<select class="form-input" name="cc_month" required>
 										  <option value="" disabled selected>Month*</option>
 											<option value="01">January</option>
 											<option value="02">February</option>
@@ -131,7 +134,7 @@ get_header();
 								</div>
 								<div class="bit-4">
 									<div class="padding">
-										<select class="form-input" name="cc_year">
+										<select class="form-input" name="cc_year" required>
 										  <option value="" disabled selected>Year*</option>
 											<option value="15">2015</option>
 											<option value="16">2016</option>
@@ -159,31 +162,31 @@ get_header();
 					<div class="frame">
 						<div class="bit-40">
 							<div class="padding">
-								<input type="text" placeholder="First Name*" class="form-input" name="bill_first_name">
+								<input type="text" placeholder="First Name*" class="form-input" name="bill_first_name" required>
 							</div>
 						</div>
 						<div class="bit-60">
 							<div class="padding">
-								<input type="text" placeholder="Street Address*" class="form-input" name="billing_address_1">
+								<input type="text" placeholder="Street Address (include Ste/Apt)*" class="form-input" name="billing_address_1" required>
 							</div>
 						</div>
 					</div>
 					<div class="frame">
 						<div class="bit-40">
 							<div class="padding">
-								<input type="text" placeholder="Last Name*" class="form-input" name="bill_last_name">
+								<input type="text" placeholder="Last Name*" class="form-input" name="bill_last_name" required>
 							</div>
 						</div>
 						<div class="bit-60">
 							<div class="frame">
 								<div class="bit-2">
 									<div class="padding">
-										<input type="text" placeholder="City*" class="form-input" name="billing_city">
+										<input type="text" placeholder="City*" class="form-input" name="billing_city" required>
 									</div>
 								</div>
 								<div class="bit-25">
 									<div class="padding">
-										<select placeholder="State*" class="form-input" name="billing_state">
+										<select placeholder="State*" class="form-input" name="billing_state" required>
 										  <option value="" disabled selected>State*</option>
 
 											<option value="AL">Alabama</option>
@@ -242,7 +245,7 @@ get_header();
 								</div>
 								<div class="bit-25">
 									<div class="padding">
-										<input type="text" placeholder="Zip Code*" class="form-input" name="billing_zip">
+										<input type="text" placeholder="Zip Code*" class="form-input" name="billing_zip" required>
 									</div>
 								</div>
 							</div>
@@ -251,7 +254,7 @@ get_header();
 					<div class="frame">
 						<div class="bit-75">
 							<div class="padding">
-								<input type="text" placeholder="Organization Name*" class="form-input">
+								<input type="text" placeholder="Organization Name*" class="form-input" name="org_name" required>
 								<h6 class="text-right">*required</h6>
 							</div>
 						</div>
@@ -270,12 +273,7 @@ get_header();
 				</div>
 			</div>
 			</form>
-				<br><br><br><br>
-				<div class="invoice-success" <?php if($show_success){ }else{ ?> style="display:none;" <?php }?>>
-					<h2 class="center">THANK YOU FOR YOUR PAYMENT</h2>
-					<h2 class="center">We will send you a confirmation email shortly.</h2>
-				</div>
-				<br><br><br><br>
+
 			</div>
 		</div>
 	</div>
@@ -300,5 +298,8 @@ get_header();
 
 <?php endwhile; endif; ?>
 
-
+<!-- 	<script type="text/javascript"> -->
+<!--   jQuery('#pay-form').parsley(); -->
+<!-- </script> -->
+	
 <?php get_footer(); ?>

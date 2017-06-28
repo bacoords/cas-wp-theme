@@ -85,21 +85,21 @@
 	<div class="info-row">
 		<div class="frame frame-1500">
 			<div class="bit-3">
-				<div class="padding-22 center">
+				<div class="padding-22 center"><img src="https://communityallstars.com/wp-content/uploads/2016/01/HomeIcons4.png" alt="Icon" width="40px" class="center"><BR>
 					<h3>Free to High Schools Nationwide</h3>
-					<p>A full line of professionaly designed and produced media to boost your image, promote your teams, and generate the funds needed to help run your department. Our services are free to high schools.  Our best schools receive over $15,000 a year from us.</p>
+					<p>A full line of professionally designed and produced media to boost your image, promote your teams, and generate the funds needed to help run your department. Our services are free to high schools. Our best schools receive up to $15,000 a year from us.</p>
 				</div>
 			</div>
 			<div class="bit-3">
-				<div class="padding-22 center">
+				<div class="padding-22 center"><img src="https://communityallstars.com/wp-content/uploads/2016/01/HomeIcons3.png" alt="Icon" width="40px" class="center"><BR>
 					<h3>Accredited</h3>
-					<p>Our team is made up of branding and marketing experts, professional designers and developers, seasoned sponsorship representatives and business development leaders. With a combined 40 + years of experience we have what it takes to accomplish what needs to be done.  We are accredited with the highest [ossible rating of an A+ by the BBB.</p>
+					<p>Our team is made up of branding and marketing experts, professional designers and developers, seasoned sponsorship representatives, and business development leaders. We have over 40 years of combined experience, and we have what it takes to accomplish what needs to be done. We are accredited with the highest possible rating of an A+ by the BBB.</p>
 				</div>
 			</div>
 			<div class="bit-3">
-				<div class="padding-22 center">
+				<div class="padding-22 center"><img src="https://communityallstars.com/wp-content/uploads/2016/01/HomeIcons2.png" alt="Icon" width="40px" class="center"><BR>
 					<h3>Everything is Custom Tailored.</h3>
-					<p>We market, brand and fund high school athletic teams and departments as if they were a professional franchise. Everything we do and create is custom tailored for each individual school.</p>
+					<p>We brand, market, and fund high school athletic teams and athletic departments as if they were a professional franchise. Everything we create and produce is custom tailored for each individual school every season.</p>
 				</div>
 			</div>
 		</div>
@@ -107,13 +107,16 @@
 		<span class="padd-140"></span>
 		
 		<div class="frame frame-1500">
-			<div class="bit-66">
+			<div class="bit-2">
 				<div class="center">
-					<h3 style="line-height: 35px;">RECENT HAPPENINGS</h3>
-					<?php $query = new WP_Query( array('category_name'=>'press', 'posts_per_page' => 1 )); ?>
+					<h3 style="line-height: 35px;">RECENT PRESS</h3>
+					<?php $query = new WP_Query( array('category_name'=>'press', 'posts_per_page' => 3 )); ?>
 			<?php if ( $query->have_posts() ) : while ( $query->have_posts() ) : $query->the_post(); ?>
+				<div class="frame width-mini">
+					<div class="bit-25"><div class="padding-22--top"><a href="<?php the_permalink() ?>" class="linkify-img"><?php the_post_thumbnail(array(120,120)); ?></a></div></div>
+					<div class="bit-75"><div class="padding-22 front-blog-title text-left"><p><?php the_title(); ?></p></div></div>
+				</div>
 			
-					<a href="<?php the_permalink() ?>" ><?php the_post_thumbnail('cas-front-left'); ?></a>
 			
 				<?php endwhile; 
 			 wp_reset_postdata();
@@ -124,13 +127,16 @@
 					<?php endif; ?>
 				</div>
 			</div>
-			<div class="bit-3">
+			<div class="bit-2">
 				<div class="center">
 					<h3 style="line-height: 35px;">RECENT BLOG</h3>
-						<?php $query = new WP_Query( array('category_name'=>'blog', 'posts_per_page' => 1 )); ?>
+						<?php $query = new WP_Query( array('category_name'=>'blog', 'posts_per_page' => 3 )); ?>
 			<?php if ( $query->have_posts() ) : while ( $query->have_posts() ) : $query->the_post(); ?>
-			
-					<a href="<?php the_permalink() ?>" ><?php the_post_thumbnail('cas-front-right'); ?></a>
+				<div class="frame width-mini">
+					<div class="bit-25"><div class="padding-22--top"><a href="<?php the_permalink() ?>" class="linkify-img"><?php the_post_thumbnail(array(120,120)); ?></a></div></div>
+					<div class="bit-75"><div class="padding-22 front-blog-title text-left"><p><?php the_title(); ?></p></div></div>
+				</div>
+					
 			
 				<?php endwhile; 
 			 wp_reset_postdata();
@@ -179,16 +185,16 @@
 		<div class="frame">
 			<div class="bit-2">
 				<div class="box-wrapper box-wrapper-four">
-					<a href="<?php echo site_url('/'); ?>/sponsors/">
-					<h3>SPONSORS</h3>
+					<a href="<?php echo site_url('/'); ?>/for-schools/">
+					<h3>SCHOOLS</h3>
 						<h3><strong>BRAND &amp; FUND YOUR TEAMS LIKE THE PROS</strong></h3>
 					</a>
 				</div>
 			</div>
 			<div class="bit-2">
 				<div class="box-wrapper box-wrapper-five">
-					<a href="<?php echo site_url('/'); ?>/for-schools/">
-					<h3>IT'S EASY</h3>
+					<a href="<?php echo site_url('/'); ?>/sponsors/">
+					<h3>BECOME A SPONSOR</h3>
 						<h3><strong>JOIN THE TEAM</strong></h3>
 					</a>
 				</div>

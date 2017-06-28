@@ -8,7 +8,7 @@
 	<title>
 		<?php wp_title( ' | ', true, 'right' ); ?> Community All Stars
 	</title>
-	<link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/scss/style.css?v=1.0.1" />
+	<link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/scss/style.css?v=1.1.0" />
 	<?php wp_head(); ?>
 </head>
 
@@ -30,10 +30,11 @@
 
 	
 <?php if ( is_front_page() ) { ?>
-	<video muted autoplay loop poster="polina.jpg" id="bgvid">
+	<video muted autoplay loop poster="https://communityallstars.com/wp-content/themes/cas-wp-theme/images/videodefaultbg2.png" id="bgvid">
 <!--    <source src="<?php echo get_template_directory_uri(); ?>/video.webm" type="video/webm">-->
     <source src="<?php echo get_template_directory_uri(); ?>/videos/movie.3.mp4" type="video/mp4">
 </video>
+<div class="video-fallback"></div>
 <div class="silkscreen"></div>
 <div class="feature feature-front" style="background:none;z-index:999">
 	<div class="frame">
@@ -74,7 +75,7 @@
 				 	<div class="bit-3">
 							  <form role="search" action="<?php echo site_url('/'); ?>" method="get" id="searchform">
 						<div class="feat-search-group">
-								<input type="text" class="feat-search-input feat-search-input-black" placeholder="Search for a school to sponsor" name="s">
+								<input type="text" class="feat-search-input feat-search-input-black" placeholder="SEARCH FOR A SCHOOL TO SPONSOR" name="s">
 								<input type="hidden" name="post_type" value="cas_school" /> <!-- // hidden 'products' value -->
 									<span class=feat-search-button-span>
 								<input class="feat-search-button" type="submit" value=" ">

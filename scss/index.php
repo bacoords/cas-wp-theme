@@ -47,7 +47,7 @@
 	<div class="team-row">
 		<div class="frame">
 			<div class="bit-1">
-				<img src="http://cas.threecordsstudio.com/wp-content/themes/cas-wp-theme/images/team-row.png" alt="Team Logos" class="team-row-img center">
+				<img src="https://communityallstars.com/wp-content/themes/cas-wp-theme/images/team-row.png" alt="Team Logos" class="team-row-img center">
 			</div>
 		</div>
 	</div>
@@ -101,7 +101,7 @@
 		<div class="frame">
 			<div class="bit-1">
 				<span class="video-overlay-open">
-					<img src="http://cas.threecordsstudio.com/wp-content/themes/cas-wp-theme/images/videorow.jpg" alt="Video Link">
+					<img src="https://communityallstars.com/wp-content/themes/cas-wp-theme/images/videorow.jpg" alt="Video Link">
 				</span>
 			</div>
 		</div>
@@ -142,7 +142,7 @@
 		<div class="frame frame-max">
 			<div class="bit-40">
 				<div class="join-row-img-container">
-					<img src="http://cas.threecordsstudio.com/wp-content/themes/cas-wp-theme/images/asseen.png" class="center" alt="As Seen on TV">
+					<img src="https://communityallstars.com/wp-content/themes/cas-wp-theme/images/asseen.png" class="center" alt="As Seen on TV">
 				</div>
 			</div>
 			<div class="bit-60">
@@ -183,7 +183,7 @@
 		<div class="frame">
 			<div class="bit-25">
 				<div class="logo-row-red">
-					<img src="http://cas.threecordsstudio.com/wp-content/themes/cas-wp-theme/images/CAS-copy-2.png" class="center">
+					<img src="https://communityallstars.com/wp-content/themes/cas-wp-theme/images/CAS-copy-2.png" class="center">
 					
 					
 				</div>
@@ -202,7 +202,7 @@
 		<div class="frame frame-max">
 			<div class="bit-3">
 				<div class="front-icons">
-					<img src="http://cas.threecordsstudio.com/wp-content/themes/cas-wp-theme/images/Layer-43.png" class="center">
+					<img src="https://communityallstars.com/wp-content/themes/cas-wp-theme/images/Layer-43.png" class="center">
 					<h2>Accredited</h2>
 					<p>Accredited with an A+ Rating by the Better Business Bureau. The highest rating possible.</p>
 					<a href="#" class="button button-clear">Learn More</a>
@@ -210,7 +210,7 @@
 			</div>
 			<div class="bit-3">
 				<div class="front-icons">
-					<img src="http://cas.threecordsstudio.com/wp-content/themes/cas-wp-theme/images/Layer-44.2.png" class="center">
+					<img src="https://communityallstars.com/wp-content/themes/cas-wp-theme/images/Layer-44.2.png" class="center">
 					<h2>Highest Returns</h2>
 					<p>Get the funding your teams need without adoing any of the work. Our top schools get over $15,000 a year from us.</p>
 					<a href="#" class="button button-clear">Learn More</a>
@@ -218,7 +218,7 @@
 			</div>
 			<div class="bit-3">
 				<div class="front-icons">
-					<img src="http://cas.threecordsstudio.com/wp-content/themes/cas-wp-theme/images/Layer-45.2.png" class="center">
+					<img src="https://communityallstars.com/wp-content/themes/cas-wp-theme/images/Layer-45.2.png" class="center">
 					<h2>Custom Tailored</h2>
 					<p>Highest quality production made by expert designers. Everything is custom tailored</p>
 					<a href="#" class="button button-clear">Learn More</a>

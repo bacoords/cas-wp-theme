@@ -12,12 +12,12 @@
 				<BR><BR><BR>
 				<div class="frame-mini">
 					<div class="bit-1">
-						
-						<h1><?php the_title(); ?></h1>
-						<BR><BR><BR>
-						<?php the_content(); ?>
-						<BR><BR><BR>
-				
+						<div class="padding">
+							<h1><?php the_title(); ?></h1>
+							<BR><BR><BR>
+							<?php the_content(); ?>
+							<BR><BR><BR>
+						</div>
 					</div>
 				</div>
 			</div>

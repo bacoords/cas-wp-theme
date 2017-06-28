@@ -27,7 +27,7 @@
 					<div class="footer-column footer-column-social">
 						<h3>Social</h3>
 						<ul>
-							<li><a href="#"><img src="<?php echo get_template_directory_uri(); ?>/images/igicon.2.png"></a></li>
+							<li><a href="https://www.instagram.com/communityallstars/"><img src="<?php echo get_template_directory_uri(); ?>/images/igicon.2.png"></a></li>
 							<li><a href="https://www.facebook.com/casallstars" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/images/fbicon.2.png"></a></li>
 						</ul>
 					</div>
@@ -55,7 +55,7 @@
 	<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/lib/venobox/venobox.css" type="text/css" media="screen" />
 <!--<script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/lib/venobox/venobox.min.js"></script>-->
 	
-	<script src="<?php echo get_template_directory_uri(); ?>/js/cas.js"></script>
+	<script src="<?php echo get_template_directory_uri(); ?>/js/cas.js?v=1.0.2"></script>
 </body>
 
 </html>

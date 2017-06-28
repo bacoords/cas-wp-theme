@@ -1,0 +1,27 @@
+{
+  "name": "cas-wp-theme",
+  "version": "1.0.0",
+  "description": "wp theme for CAS",
+  "main": "js/cas.js",
+  "scripts": {
+    "scss": "node-sass --output-style compressed -o css scss",
+    "autoprefixer": "postcss -u autoprefixer -r css/*",
+		"uglify": "uglifyjs js/*.js -m -o js-min/app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bacoords/cas-wp-theme.git"
+  },
+  "author": "Brian Coords",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bacoords/cas-wp-theme/issues"
+  },
+  "homepage": "https://github.com/bacoords/cas-wp-theme",
+  "devDependencies": {
+    "autoprefixer": "^6.3.3",
+    "node-sass": "^3.4.2",
+    "postcss-cli": "^2.5.1",
+    "uglify-js": "^2.6.1"
+  }
+}

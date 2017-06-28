@@ -4,13 +4,13 @@
       <li><a href="http://www.teambank.org" target="_blank">TeamBank</a></li>
       <li><a href="<?php echo site_url(); ?>/category/blog/">Blog</a></li>
       <li><a href="<?php echo site_url(); ?>/category/press/">Press</a></li>
-      <li><a href="<?php echo site_url(); ?>/for-schools/#sign-up">SignUp</a></li>
+      <li><a href="<?php echo site_url(); ?>/for-schools/#sign-up">School Sign-Up</a></li>
     </ul>  
   </div>
   <div class="cnt-right">
     <ul>
       <li><a href="<?php echo site_url(); ?>/invoice/">Pay Invoice</a></li>
-      <li><a href="<?php echo site_url(); ?>/upload/">Upload Pics</a></li>
+      <li><a href="<?php echo site_url(); ?>/upload/">Upload Content</a></li>
       <li><a href="<?php echo site_url(); ?>/contact/#email">Email</a></li>
       <li><a href="<?php echo site_url(); ?>/sponsors/#faq">FAQ</a></li>
       <li><a href="<?php echo site_url(); ?>/checkout/" class="cnt-cart"><img src="<?php echo site_url(); ?>/wp-content/themes/cas-wp-theme/images/shoppingcartbig.png" alt="Cart"></a></li>

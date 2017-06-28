@@ -131,7 +131,7 @@
 	padding-bottom:70px;
 	h2{
 		color: #6f6f6f;
-		font: 300 2rem / 2.2rem 'Lato' sans-serif;
+		font: 300 2rem / 2.2rem 'Lato', sans-serif;
 		padding-bottom: 20px;
 	}
 }
@@ -139,7 +139,7 @@
 
 .row-schools-sponsor-form{
 	background:#e4e4e4;
-	display:none;
+//	display:none;
 	padding-top:20px;
 	padding-bottom:40px;
 }
@@ -153,6 +153,7 @@
 .form-panel{
 	background-color: #ffffff;
 	border-radius: 15px;
+	overflow: hidden;
 	.form-item{
 		padding:15px;
 		h2{
@@ -208,22 +209,44 @@
 .adb-selectable li{
 	cursor: pointer;
 }
-.adb-selectable .ui-selected {
-	border: 4px solid #3fbeff;
-
+.adb-selectable-blue-inner .ui-selected {
+		 background:#e9e9e9;
+	   -webkit-box-shadow:inset 0px 0px 0px 4px #3fbeff;
+    -moz-box-shadow:inset 0px 0px 0px 4px #3fbeff;
+    box-shadow:inset 0px 0px 0px 4px #3fbeff
+}
+.adb-selectable-blue-glow .ui-selected {
+border: 4px solid #3fbeff;
 }
 
-
 .adb-img-float-left{
-	display: block;
-	float:left;
-	border:4px solid transparent;
-		border-radius: 3px;
-//	margin:5px;
-	img{
-		display: block;
-		float:left;
-	}
+      font:800 18px 'Lato';
+      color:#000;
+      text-decoration:none;
+      display:block;
+      cursor:pointer;
+      padding:25px 10px;
+			text-align:center;
+      &:hover{
+        background:#e9e9e9;
+      }
+      width:33%;
+      float:left;
+      border-right:1px solid #e9e9e9;
+      border-top:1px solid #e9e9e9;
+      &:nth-of-type(3n+3){
+        border-right:none;
+      }
+      &:nth-of-type(1){
+        border-top:none;
+      }
+      &:nth-of-type(2){
+        border-top:none;
+      }
+      &:nth-of-type(3){
+        border-top:none;
+      }
+    
 }
 .adb-img-br{
 	display:inline;

@@ -1,6 +1,6 @@
 # Custom WP Theme for Community All Stars
 
-[Demo Here](http://cas.threecordsstudio.com)
+[Demo Here](https://communityallstars.com)
 
 #### To-do list
 

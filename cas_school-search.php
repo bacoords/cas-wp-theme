@@ -60,7 +60,20 @@ window.location = "<? the_permalink(); ?>"
 				
 						<br><br><br>
 						<p class="center">Please try another search.</p>
-						
+						<BR><BR><BR>
+						<div class="frame" style="max-width:300px;">
+							<div class="bit-1">
+								      <form role="search" action="<?php echo site_url('/'); ?>" method="get" id="searchform">
+												<div class="cn-feat-search-group">
+														<input type="text" class="cn-feat-search-input cn-feat-search-input--black" placeholder="Search for a school" name="s">
+														<input type="hidden" name="post_type" value="cas_school" /> 
+															<span class=cn-feat-search-button-span>
+														<input class="cn-feat-search-button" type="submit" value=" ">
+													</span>
+												</div>	
+											</form>
+							</div>
+						</div>
 						</div>
 		
 
